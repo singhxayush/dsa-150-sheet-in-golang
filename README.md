@@ -10,7 +10,7 @@
 
 ### 01. Merge Sorted Array
 
-[Problem Link](https://leetcode.com/problems/remove-element/)
+[Problem Link](https://leetcode.com/problems/merge-sorted-array/)
 
 **2 pointer approach:** Start 2 pointers from both ends of each num1 and num2 array. Add a new pointer from the end of new array to be written(extended end of num1 here) that will write the result. Based on comparision of elements from 2 sorted array from the end start filling the auxilary array with biggest element from it's end. Decrement the pointer until either of the array gets exhausted out of elements to be compared(num2 in this case).
 
@@ -64,7 +64,7 @@ num2 empty
 
 ### 02. Remove Element
 
-[Problem Link](https://leetcode.com/problems/merge-sorted-array/description/)
+[Problem Link](https://leetcode.com/problems/remove-element/)
 
 **Constructive Approach:** Iterate through all the elements and maintain a counter (also as an index) for all the elements that will count all the elements that are not equal to the given value. Now write back all the non equal elements at the index of counter. The Value written will always be ahead of all the non equal values previously written and 
 
