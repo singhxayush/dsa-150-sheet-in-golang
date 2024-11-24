@@ -14,7 +14,7 @@
 
 **2 pointer approach:** Start 2 pointers from both ends of each num1 and num2 array. Add a new pointer from the end of new array to be written(extended end of num1 here) that will write the result. Based on comparision of elements from 2 sorted array from the end start filling the auxilary array with biggest element from it's end. Decrement the pointer until either of the array gets exhausted out of elements to be compared(num2 in this case).
 
-[My Submission](https://leetcode.com/submissions/detail/1461678292/)
+[My Submission](https://leetcode.com/submissions/detail/1461662052/)
 
 [solutions/01-Merge-Sorted-Array](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/01-Merge-Sorted-Array.go)
 
@@ -68,7 +68,7 @@ num2 empty
 
 **Constructive Approach:** Iterate through all the elements and maintain a counter (also as an index) for all the elements that will count all the elements that are not equal to the given value. Now write back all the non equal elements at the index of counter. The Value written will always be ahead of all the non equal values previously written and 
 
-[My Submission](https://leetcode.com/submissions/detail/1461662052/)
+[My Submission](https://leetcode.com/submissions/detail/1461678292/)
 
 [solutions/02-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/02-Remove-Element.go)
 
@@ -99,5 +99,5 @@ cnt = 0
           ^ 2 == val, do nothing
 
 1 4 3 7 3 2 7
-            ^ 7 != val, cnt = 3, arr[cnt] = 7
+            ^ 7 != val, cnt = 3, arr[cnt++] = 7
 ```
