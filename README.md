@@ -4,7 +4,7 @@
 
 1. [Merge Sorted Array](#01-merge-sorted-array)
 2. [Remove Element](#02-remove-element)
-3. [Problem Name Placeholder](#03-remove-duplicates-from-sorted-array)
+3. [Remove Duplicates from Sorted Array](#03-remove-duplicates-from-sorted-array)
 
 ## Solutions
 
