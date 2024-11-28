@@ -4,7 +4,7 @@
 
 1. [Merge Sorted Array](#01-merge-sorted-array)
 2. [Remove Element](#02-remove-element)
-3. [Problem Name Placeholder](#03-problem-name-placeholder)
+3. [Problem Name Placeholder](#03-remove-duplicates-from-sorted-array)
 
 ## Solutions
 
@@ -15,6 +15,10 @@
 **2 pointer approach:** Start 2 pointers from both ends of each num1 and num2 array. Add a new pointer from the end of new array to be written(extended end of num1 here) that will write the result. Based on comparision of elements from 2 sorted array from the end start filling the auxilary array with biggest element from it's end. Decrement the pointer until either of the array gets exhausted out of elements to be compared(num2 in this case).
 
 [My Submission](https://leetcode.com/submissions/detail/1461662052/)
+
+**Time Complexity:** O(N)
+
+**Space Complexity:** O(1)
 
 [solutions/01-Merge-Sorted-Array](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/01-Merge-Sorted-Array.go)
 
@@ -70,6 +74,10 @@ num2 empty
 
 [My Submission](https://leetcode.com/submissions/detail/1461678292/)
 
+**Time Complexity:** O(N)
+
+**Space Complexity:** O(1)
+
 [solutions/02-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/02-Remove-Element.go)
 
 **Dry run**
@@ -100,4 +108,45 @@ cnt = 0
 
 1 4 3 7 3 2 7
             ^ 7 != val, cnt = 3, arr[cnt++] = 7
+```
+
+---
+
+### 03. Remove Duplicates from Sorted Array
+
+[Problem Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
+
+**2 Pointer Approach:** Observation - "The problem boils down to number of unique elemets and placement of those unique elemetns as they are occuring in the array from the starting of the array". Create a pointer that will traverse the entire array and create a variable (2nd pointer) that will count the number of unqiue elements which can be simply done by comparing two adjacent element. This will also act as the index for placement of unique found elemets from the beginning of the array.
+
+[My Submission](https://leetcode.com/submissions/detail/1461716729/)
+
+**Time Complexity:** O(N)
+
+**Space Complexity:** O(1)
+
+
+[solutions/03-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/03-Remove-Duplicates-from-Sorted-Array.go)
+
+**Dry run**
+
+```txt
+arr[] = {1, 2, 2, 3, 3, 3, 4}
+cnt = 1 // because one element will atleast be unique
+
+1 2 2 3 3 3 4
+^ 1 != 2 => arr[cnt++] = arr[i+1];
+
+1 2 2 3 3 3 4
+  ^ 2 == 2 => no changes
+
+1 2 2 3 3 3 4
+    ^ 2 != 3 => arr[cnt++] = arr[i+1]
+
+1 2 3 3 3 3 4
+      ^ ^ => nothing
+
+1 2 3 3 3 3 4
+          ^ 3 != 4 => arr[cnt++] = arr[i+1]
+
+1 2 3 4 3 3 4
 ```
