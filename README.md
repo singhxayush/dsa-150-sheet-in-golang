@@ -16,13 +16,15 @@
 
 [My Submission](https://leetcode.com/submissions/detail/1461662052/)
 
-**Time Complexity:** O(N)
+| Complexity Analysis | value |
+| ------------------- | ----- |
+| **Time**            | O(N)  |
+| **Space**           | O(1)  |
 
-**Space Complexity:** O(1)
+Code: [solutions/01-Merge-Sorted-Array](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/01-Merge-Sorted-Array.go)
 
-[solutions/01-Merge-Sorted-Array](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/01-Merge-Sorted-Array.go)
-
-**Dry run**
+<details open >
+<summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
 num1[] = {1, 2, 3, 4}
@@ -64,23 +66,27 @@ no comparision here - simply write
 num2 empty
 ```
 
+</details>
+
 ---
 
 ### 02. Remove Element
 
 [Problem Link](https://leetcode.com/problems/remove-element/)
 
-**Constructive Approach:** Iterate through all the elements and maintain a counter (also as an index) for all the elements that will count all the elements that are not equal to the given value. Now write back all the non equal elements at the index of counter. The Value written will always be ahead of all the non equal values previously written and 
+**Constructive Approach:** Iterate through all the elements and maintain a counter (also as an index) for all the elements that will count the number of elements that are not equal to the given value. Simultaneously write back all the non equal elements at the index of counter. The Value written will always be ahead of all the non equal values previously written.
 
 [My Submission](https://leetcode.com/submissions/detail/1461678292/)
 
-**Time Complexity:** O(N)
+| Complexity Analysis | value |
+| ------------------- | ----- |
+| **Time**            | O(N)  |
+| **Space**           | O(1)  |
 
-**Space Complexity:** O(1)
+Code: [solutions/02-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/02-Remove-Element.go)
 
-[solutions/02-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/02-Remove-Element.go)
-
-**Dry run**
+<details open >
+<summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
 arr[] = {1, 2, 2, 4, 3, 2, 7}
@@ -110,6 +116,8 @@ cnt = 0
             ^ 7 != val, cnt = 3, arr[cnt++] = 7
 ```
 
+</details>
+
 ---
 
 ### 03. Remove Duplicates from Sorted Array
@@ -120,14 +128,15 @@ cnt = 0
 
 [My Submission](https://leetcode.com/submissions/detail/1461716729/)
 
-**Time Complexity:** O(N)
+| Complexity Analysis | value |
+| ------------------- | ----- |
+| **Time**            | O(N)  |
+| **Space**           | O(1)  |
 
-**Space Complexity:** O(1)
+Code: [solutions/03-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/03-Remove-Duplicates-from-Sorted-Array.go)
 
-
-[solutions/03-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/03-Remove-Duplicates-from-Sorted-Array.go)
-
-**Dry run**
+<details open >
+<summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
 arr[] = {1, 2, 2, 3, 3, 3, 4}
@@ -150,3 +159,5 @@ cnt = 1 // because one element will atleast be unique
 
 1 2 3 4 3 3 4
 ```
+
+</details>
