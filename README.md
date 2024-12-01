@@ -23,7 +23,7 @@
 
 Code: [solutions/01-Merge-Sorted-Array](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/01-Merge-Sorted-Array.go)
 
-<details open >
+<details close >
 <summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
@@ -85,7 +85,7 @@ num2 empty
 
 Code: [solutions/02-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/02-Remove-Element.go)
 
-<details open >
+<details close >
 <summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
@@ -135,7 +135,7 @@ cnt = 0
 
 Code: [solutions/03-Remove-Element](https://github.com/singhxayush/dsa-150-sheet-in-golang/blob/master/solutions/03-Remove-Duplicates-from-Sorted-Array.go)
 
-<details open >
+<details close >
 <summary><b style="padding-left: 6px;">Dry Run</b></summary>
 
 ```txt
